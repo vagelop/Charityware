@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ <hibernate-mapping >
+   <class  name="charity.model.Form" table="form">
+ 	<id name="formId" type="int" column="form_id">
+         <generator class="native"/>
+      </id>
+      	<many-to-one lazy="false" unique="true" name="formType"  class="charity.model.FormType">
+      		<column name="form_type_id" not-null="true"/>
+      	</many-to-one>
+        <property name="formName" type="string" column="form_name" />
+        <property name="dateCreated" type="java.sql.Date" column="Date_Created"/>
+        <property name="isActive" type="boolean" column="isActive"/>
+        <property name="url" type="string" column="url"/>       
+
+        <set name="fields" table="form_fields" inverse="false" lazy="false" cascade="save-update">
+        	<key column="form_id" not-null="true"/>
+        	<one-to-many class="charity.model.FormFields" />
+        </set>
+        <!--    
+        <set name="permissions" table="form_permissions" inverse="true" lazy="false" cascade="all-delete-orphan">
+        	<key column="form_id" not-null="true"/>
+        	<one-to-many class="charity.model.FormPermissions" />
+        </set>
+        -->
+       
+    </class>
+
+</hibernate-mapping>

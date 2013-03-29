@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ <hibernate-mapping>
+  <class name="charity.model.FormPermissions" table="form_permissions">
+  	<!--  
+  	<id name="form_permissions_id" type="int" column="form_permissions_id">
+         <generator class="native"/>
+      </id>
+     --> 
+     <!--  
+    <composite-id>
+      <key-many-to-one lazy="false" name="form" column="form_id" class="charity.model.Form"/>
+      <key-many-to-one lazy="false" name="user_type" column="user_type_id" class="charity.model.UserType"/>			
+    </composite-id>
+    <many-to-one name="form" class="charity.model.Form" column="form_id" insert="false" update="false"/> 
+	<many-to-one name="user_type" class="charity.model.UserType" column="user_type_id" insert="false" update="false"/>
+       -->
+      <meta attribute="class-description">
+         This class contains the filled form detail. 
+      </meta>
+       
+      <composite-id name="pk" class="charity.model.FormPermissionsPK">
+    		<key-many-to-one lazy="false"  name="form" column="form_id" class="charity.model.Form" />
+    		<key-many-to-one lazy="false"  name="user_type" column="user_type_id" class="charity.model.UserType"/>
+	  </composite-id>
+	  
+	  <!--  
+	  <many-to-one  lazy="false" name="form" class="charity.model.Form">
+        	<column name="form_id" not-null="true"/>
+      </many-to-one>
+      <many-to-one  lazy="false" name="user_type" class="charity.model.UserType">
+        	<column name="user_type_id" not-null="true"/>
+      </many-to-one>
+      -->
+      <property name="permission" column="Permission" type="string"/>
+      <property name="isActive" column="isActive" type="boolean"/>
+   </class>
+ </hibernate-mapping>
+ 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ <hibernate-mapping>
+  <class name="system.model.AccessLog" table="access_log">
+    
+    <id name="access_log_id" type="int" column="access_log_id">
+         <generator class="native"/>
+    </id>
+	
+	<set name="user" lazy="false">
+		<key column="user_id"/>
+		<one-to-many class="system.model.User"/>
+	</set>
+	
+	<property name="access_start_date" column="access_start_date" type="java.sql.Date"/>
+	<property name="access_end_date" column="access_end_date" type="java.sql.Date"/>
+	<property name="device" column="device" type="string"/>
+	<property name="location" column="location" type="string"/>
+	<property name="isOnline" column="isOnline" type="boolean"/>
+   </class>
+ </hibernate-mapping>
+ 

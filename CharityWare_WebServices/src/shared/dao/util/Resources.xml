@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<mySQLRootUser>root</mySQLRootUser>
+	<mySQLRootPassword>root</mySQLRootPassword>
+	<mySQLDriver>com.mysql.jdbc.Driver</mySQLDriver>
+	<mySQLConUrl>jdbc:mysql://localhost:3306/</mySQLConUrl>
+</resources>

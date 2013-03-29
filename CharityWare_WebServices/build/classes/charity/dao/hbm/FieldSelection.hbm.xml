@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+   <class name="charity.model.FieldSelection" table="field_selection">
+      <meta attribute="class-description">
+         This class contains the filled form detail. 
+      </meta>
+      <id name="field_selection_id" type="int" column="field_selection_id">
+         <generator class="native"/>
+      </id>
+      <property name="field_selection_value" column="field_selection_value" type="string"/>
+      <!--  
+      <many-to-one cascade="save-update" unique="true" name="formField" class="charity.model.FormFields">
+      	<column name="field_id" not-null="true"/>
+      </many-to-one>
+      -->
+      <many-to-one  lazy="false" name="formField" class="charity.model.FormFields">
+        	<column name="field_id" not-null="true"/>
+      </many-to-one>
+   </class>
+</hibernate-mapping>

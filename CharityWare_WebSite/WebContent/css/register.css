@@ -1,0 +1,105 @@
+/* REGISTER CONTENT */
+
+.registerTextbox{
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+	background-color:#fff;
+	color:#333;
+	padding:5px 10px;
+	border:1px solid #fff;
+	-webkit-transition: border 1s ease;
+	-moz-transition: border 1s ease;
+	-ms-transition: border 1s ease;
+	-o-transition: border 1s ease;
+	transition: border 1s ease;
+	width:350px;
+}
+
+.registerTextbox:focus{
+	border:1px solid #623e00;
+	outline:0px;
+}
+
+
+.registerTextarea{
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+	background-color:#fff;
+	color:#333;
+	padding:5px 10px;
+	border:1px solid #fff;
+	-webkit-transition: border 1s ease;
+	-moz-transition: border 1s ease;
+	-ms-transition: border 1s ease;
+	-o-transition: border 1s ease;
+	transition: border 1s ease;
+}
+
+.registerTextarea:focus{
+	border:1px solid #623e00;
+	outline:0px;
+}
+
+.registerSubmit{
+	border:0 none;
+	background-color:#f6b400;
+	padding:5px 10px;
+	color:#623e00;
+	font-weight:bold;
+	-webkit-border-radius: 5px;	
+	border-radius: 5px;
+	-webkit-transition: 1s ease;
+	-moz-transition: 1s ease;
+	-ms-transition: 1s ease;
+	-o-transition: 1s ease;
+	transition: 1s ease;
+}
+
+.registerSubmit:hover{
+	cursor:pointer;
+	background-color:#f69c00;
+}
+
+
+.userTextbox{
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+	background-color: rgb(218, 214, 204);
+	color:#623e00;
+	padding:5px 10px;
+	border:1px solid #fff;
+	font-size: 12px;
+	-webkit-transition: border 1s ease;
+	-moz-transition: border 1s ease;
+	-ms-transition: border 1s ease;
+	-o-transition: border 1s ease;
+	transition: border 1s ease;
+	width:250px;
+}
+
+.userTextbox:focus{
+	border:1px solid #623e00;
+	outline:0px;
+}
+
+.ddUserType select{
+   -webkit-border-radius: 5px;
+   background: rgb(218, 214, 204);
+   border-radius:5px;
+   color:#623e00;
+   padding:5px 10px;
+   border:1px solid #fff;
+   width: 270px;
+   font-size: 12px;
+   height: 25px;
+   -webkit-transition: border 1s ease;
+	-moz-transition: border 1s ease;
+	-ms-transition: border 1s ease;
+	-o-transition: border 1s ease;
+	transition: border 1s ease;
+   }
+   
+.ddUserType select:focus{
+	border:1px solid #623e00;
+	outline:0px;
+}

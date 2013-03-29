@@ -1,0 +1,393 @@
+/* HTML ELEMENTS */
+a, abbr, acronym, address, applet, article, aside, audio, b, blockquote, big, body, center, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, dl, div, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, object, ol, output, p, pre, progress, q, s, samp, section, small, span, source, strike, strong, sub, sup, table, tbody, tfoot, thead, th, tr, tdvideo, tt, u, ul, var {
+	border:0 none;
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+}
+
+a {
+    transition: all 1s ease 0s;
+}
+
+ol, ul {
+	list-style:none
+}
+
+h2 {
+    font-size: 35px;
+    color: rgb(87, 86, 82);
+    font-weight: 400;
+    line-height: 1.2em;
+    letter-spacing: -1px;
+    padding-bottom: 12px;
+}
+
+h3 {
+    font-size: 35px;
+    color: rgb(218, 214, 204);
+    font-weight: 400;
+    line-height: 1.2em;
+    padding: 10px 0px 0px 10px;
+    letter-spacing: -1px;
+}
+
+/* CLASSES */
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.main {
+	margin:0 auto;
+	width:993px;
+	background-image: url("../images/Background.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+	
+}
+
+.body {
+	background:#000;
+	border:0;
+	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#575652;
+	line-height:22px
+}
+
+/* FOOTER CLASSES */
+
+.contactTextbox{
+	-webkit-border-radius: 5px;
+    outline:0;
+    border-radius: 5px;
+	color:#fff;
+	background-color:#333;
+	padding:5px 10px;
+	border:1px solid #222;
+	-webkit-transition: border 1s ease;
+	-moz-transition: border 1s ease;
+	-ms-transition: border 1s ease;
+	-o-transition: border 1s ease;
+	transition: border 1s ease;
+	width:300px;
+}
+
+.contactTextbox:focus{
+	border:1px solid #167cc9;
+	outline:0px;
+}
+
+
+.contactTextarea{
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+	color:#fff;
+	background-color:#333;
+	padding:5px 10px;
+	border:1px solid #222;
+	-webkit-transition: border 1s ease;
+	-moz-transition: border 1s ease;
+	-ms-transition: border 1s ease;
+	-o-transition: border 1s ease;
+	transition: border 1s ease;
+}
+
+.contactTextarea:focus{
+	border:1px solid #167cc9;
+	outline:0px;
+}
+
+.contactSubmit{
+	border:0 none;
+	background-color:#f6b400;
+	padding:5px 10px;
+	color:#623e00;
+	font-weight:bold;
+	-webkit-border-radius: 5px;	
+	border-radius: 5px;
+	-webkit-transition: 1s ease;
+	-moz-transition: 1s ease;
+	-ms-transition: 1s ease;
+	-o-transition: 1s ease;
+	transition: 1s ease;
+}
+
+.contactSubmit:hover{
+	cursor:pointer;
+	background-color:#f69c00;
+}
+
+.contactDiv{
+	float:left; 
+	width:600px;
+	display:inline-block;
+}
+
+.contactTable{
+	border-spacing:5px;
+	border-collapse: inherit;
+}
+
+.footerText {
+    padding-top: 5px;
+    border-top: 2px solid rgb(0, 0, 0);
+    text-align: center;
+}
+
+.footerText a {
+	color:#fff;
+	text-decoration:none
+}
+
+.footerText a:hover {
+	text-decoration:underline
+}
+
+#icons {
+	padding:10px 0 0 0
+}
+
+#icons li {
+	float:left;
+	padding-right:10px
+}
+
+
+/* TOP MENU */
+
+#menubar { 
+	margin: 0; 
+	list-style-type: none; 
+	padding: 10px;
+    position: relative;
+    right: 20px;
+    text-align: right;
+    top: 20px;
+} 
+ 
+#menubar li {  		
+	display:inline-block; 
+	padding: 0 5px;
+} 
+ 
+#menubar li a {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; 
+	text-decoration: none;
+	font-size:14px;
+	color: #fff;
+} 
+ 
+#menubar li a:hover { 
+	opacity:0.6;
+	color:#f6b400;
+} 
+
+/* CHARITYWARE LOGO TITLE */
+
+#footer_logo {
+    color: #DEDBD2;
+    float: left;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 1.2em;
+    margin-left: -4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#footer_logo span {
+    color: #FFC11E;
+}
+
+
+/* MAIN CONTENT */
+
+#content {
+	position:relative;
+	top:10px;
+}
+
+.contentBox {
+    background-color: rgb(218, 214, 204);
+    padding: 15px 30px 29px;
+}
+
+
+#menubar2 { 
+	margin: 0; 
+	list-style-type: none; 
+	padding: 10px;
+    position: relative;
+    right: 20px;
+    text-align: right;
+    top: 20px;
+} 
+ 
+#menubar2 li {  	
+	display:inline-block; 
+	padding: 0 5px;
+} 
+ 
+#menubar2 li a {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; 
+    text-decoration: none;
+	font-size:15px;
+    color: #575652;
+} 
+ 
+#menubar2 li a:hover { 
+  	opacity:0.6;
+	color:#f6b400;
+} 
+
+
+/* TABS */
+/*
+#formwizard{
+	display:none;
+}*/
+
+.tabbed_area {  
+    padding:8px; 
+    margin: 0px auto 0px auto;  
+    clear:both; 
+    background: rgba(255,138,30,0.8); 
+    width:auto; 
+	-moz-border-radius-topright: 8px; 
+	-moz-border-radius-bottomright: 8px; 
+	-moz-border-radius-bottomleft: 8px;
+	-webkit-border-top-right-radius:8px; 
+	-webkit-border-bottom-right-radius:8px; 
+	-webkit-border-bottom-left-radius:8px;
+}
+
+#tabs { margin:40px 0 0 20px; }
+#tabs ul { list-style:none; }
+#tabs ul li { display:inline; float:left; margin-bottom:11px; }
+
+
+#tabs ul li:first-child a { 
+	-moz-border-radius-topleft: 12px; 
+	-webkit-border-top-left-radius:12px; 
+}
+
+#tabs ul li:last-child a {
+	-moz-border-radius-topright: 12px; 
+	-webkit-border-top-right-radius:12px; 
+}
+
+#tabs ul li a { 
+	padding:20px; 
+	background: rgba(255,138,30,0.3); 
+	text-decoration: none; 
+	font: bold 14px Helvetica, Sans-Serif; 
+	letter-spacing: -1px; 
+	color: #402e16;
+	text-shadow: #eee 0px 0px 2px; 
+}
+	
+#tabs ul li a:hover { 
+	-moz-box-shadow: 0 -5px 10px #777; 
+	-webkit-box-shadow: 0 -5px 10px #777;
+	background-color:rgb(255,173,10) !important;
+	-moz-opacity:.90; 
+	filter:alpha(opacity=90); 
+	opacity:.90; 
+	}
+
+#tabs ul li a.active { background: rgba(255,138,30,0.8) !important; }
+
+.tabContent {  
+    background-color:#ffffff;  
+    padding:10px;  
+    border:1px solid #464c54;  
+}
+
+#content_2, #content_3 { display:none; }
+
+.tabContent ul {  
+    margin:0px;  
+    padding:0px 20px 0px 20px;  
+}
+
+.tabContent ul li {  
+    list-style:none;  
+    padding-top:15px;  
+    padding-bottom:15px;  
+    font-size:13px;  
+}
+
+.tabContent ul li a {  
+    text-decoration:none;  
+    color:#3e4346;  
+}
+
+.tabContent ul li a small {  
+    color:#8b959c;  
+    font-size:9px;  
+    text-transform:uppercase;  
+    position:relative;  
+    left:4px;  
+    top:0px;  
+}
+
+table.resultSet{
+	border:1px solid #666;
+	width:auto;
+}
+
+table.resultSet tr{
+	border:1px solid #666;
+}
+
+table.resultSet td{
+	border:1px solid #666;
+	padding:10px;	
+}
+
+/* TOOLTIPS */
+.tooltip {
+    
+    font-size: 12px;
+    position:absolute;
+    z-index: 999;
+    white-space:nowrap;
+}
+ 
+.tooltip::after {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px 8px 8px 0px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    content: attr(data-tooltip); /* The main part of the code, determining the content of the pop-up prompt */
+    margin-top: -25px;
+    opacity: 0; /* Our element is transparent... */
+    padding: 3px 7px;
+    position: absolute;
+    visibility: hidden; /* ...and hidden. */
+             
+    transition: all 0.4s ease-in-out; /* To add some smoothness */
+}
+         
+.tooltip:hover::after {
+    opacity: 1; /* Make it visible */
+    visibility: visible;
+}
+
+/* EVENTS */
+.pad_bot2 {
+	padding-bottom:4px
+}
+.events{
+	background-color: #EFEFEF;
+    border-radius: 5px;-webkit-border-radius: 5px;
+    float: left;
+    margin: 2px;
+    padding: 5px;
+    width: 280px;
+}
